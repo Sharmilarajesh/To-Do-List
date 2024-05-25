@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("img.jpg");
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 3%; /* Adjust this value to move the title up */
+  margin-bottom: 1em; /* Ensure there's space below the title */
+}
+.container {
+  width: 90%;
+  max-width: 34em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  margin-top: 2em; /* Move the whole container down */
+}
+#new-task {
+  position: relative;
+  background-color: #d3d3d3;
+  padding: 1.8em 1.25em;
+  border-radius: 0.3em;
+  box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1em;
+  margin-top: 1em; /* Move the new task box down */
+}
+#new-task input {
+  font-size: 1em;
+  border: none;
+  border-bottom: 2px solid #269dd8;
+  padding: 0.8em 0.5em;
+  color: #111111;
+  font-weight: 500;
+}
+#new-task input:focus {
+  outline: none;
+  border-color: #0aa1a7;
+}
+#new-task button {
+  font-weight: 500;
+  font-size: 1em;
+  background-color: #0aa1a7;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+#task-summary {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 1em; /* Move the total tasks down */
+}
+#tasks {
+  background-color: #d3d3d3;
+  position: relative;
+  padding: 1.8em 1.25em;
+  margin-top: 1em; /* Move the tasks box down */
+  width: 100%;
+  height: 300px; /* Fixed height */
+  overflow-y: auto; /* Add vertical scroll if needed */
+  box-shadow: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
+  border-radius: 0.6em;
+  min-height: 300px; /* Ensure it is always shown */
+}
+.task {
+  background-color: #ffffff;
+  padding: 0.3em 0.6em;
+  margin-top: 0.6em;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #d1d3d4;
+  cursor: pointer;
+}
+.task span {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+.task input[type="checkbox"] {
+  margin-right: 1em;
+}
+.task button {
+  color: #ffffff;
+  padding: 0.8em 0;
+  width: 2.8em;
+  border-radius: 0.3em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.delete {
+  background-color: #0aa1a7;
+  margin-left: auto;
+}
+.completed {
+  text-decoration: line-through;
+}
+.delete-all {
+  background-color: #0aa1a7;
+  color: #ffffff;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  display: block;
+  margin: 2em auto 0;
+  margin-top: 1em; /* Move the delete-all button down */
+  
+}
